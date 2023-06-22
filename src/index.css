@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .h1 {
+        @apply font-fontGeneral text-xl sm:text-3xl font-bold tracking-wider uppercase text-center
+    }
+    .h2 {
+        @apply font-fontGeneral text-xl sm:text-3xl font-semibold tracking-wide text-center
+    }
+    .h3 {
+        @apply font-fontGeneral text-lg sm:text-[26px] font-normal text-center
+    }
+    .h4 {
+        @apply font-fontGeneral text-base sm:text-2xl font-normal text-center
+    }
+    .p1 {
+        @apply font-fontGeneral text-xs sm:text-[22px] font-normal
+    }
+    .p2 {
+        @apply font-fontGeneral text-[11px] sm:text-lg font-semibold
+    }
+    .p3 {
+        @apply font-fontGeneral text-[11px] sm:text-lg font-normal
+    }
+    .green-button {
+        @apply bg-green-900 hover:bg-lightGreen-50 shadow-lg shadow-green-900/40 rounded-full px-6 sm:px-8 py-1.5 sm:py-2.5 text-lightGreen-50 hover:text-green-900
+    }
+}
